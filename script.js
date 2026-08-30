@@ -62,7 +62,7 @@ function handle(event) {
     excerpt: 'A short stack that earns its keep — HTML, CSS, JS and a purple background can go a long way.',
     content: `
       <p>This site is three files. No build step, no framework. The constraint is the point.</p>
-      <p>Constraints force clarity. Two colors (<code>#7d5ba6</code> and <code>#DFD9E2</code>), one serif for headlines, one mono for UI, and line-art for texture. Everything else is composition.</p>
+      <p>Constraints force clarity. Two colors (<code>#6b4a9e</code> and <code>#DFD9E2</code>), one serif for headlines, one mono for UI, and line-art for texture. Everything else is composition.</p>
       <h2>WHEN TO ADD A TOOL</h2>
       <p>Add a tool only when it removes an entire class of problems. Otherwise it's just weight you carry.</p>
       <p>Start with the platform. Push it further than you think it goes.</p>

@@ -1,6 +1,6 @@
-/* Design brief: #7d5ba6 bg, #DFD9E2 fg, flat, no gradients/shadows */
+/* Design brief: #6b4a9e bg (little darker), #DFD9E2 fg, flat, no gradients/shadows */
 :root{
-  --bg:#7d5ba6;
+  --bg:#6b4a9e;
   --fg:#DFD9E2;
   --fg-dim:rgba(223,217,226,0.7);
   --fg-faint:rgba(223,217,226,0.35);
