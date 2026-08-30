@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grahana — Developer</title>
+  <meta name="description" content="Portfolio of Grahana — Developer, builder, and creator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">grah<span>4</span>na</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/grah4na" target="_blank" rel="noopener" class="nav-cta">GitHub ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Available for new opportunities • 2026</p>
+        <h1>Hi, I'm <span class="accent">Grahana</span><br>— I build things for the web.</h1>
+        <p class="lead">
+          Developer focused on clean code, minimal design, and fast experiences.
+          I love turning ideas into real products.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>Location</strong> Remote</span>
+          <span class="dot">•</span>
+          <span><strong>Focus</strong> Web Development</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-dots"><i></i><i></i><i></i></span>
+            <span class="card-title">grahana.js</span>
+          </div>
+<pre><code><span class="c">// whoami</span>
+<span class="k">const</span> dev = {
+  name: <span class="s">"Grahana"</span>,
+  role: <span class="s">"Developer"</span>,
+  stack: [<span class="s">"JavaScript"</span>, <span class="s">"React"</span>, <span class="s">"Node.js"</span>],
+  passion: <span class="s">"Building for the web"</span>,
+  available: <span class="b">true</span>
+};
+
+<span class="k">export default</span> dev;</code></pre>
+          <div class="card-footer">
+            <span>● Online and building</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01 — About</span>
+        <h2>Minimal, fast, and thoughtful.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm Grahana, a developer who enjoys crafting simple and effective digital experiences.
+          I focus on writing maintainable code, learning continuously, and shipping products that actually help people.
+          <br><br>
+          When I'm not coding, I'm exploring new tech, contributing to open source, or refining this site.
+        </p>
+        <ul class="skills">
+          <li><span>Frontend</span>HTML / CSS / JavaScript / React</li>
+          <li><span>Backend</span>Node.js / APIs</li>
+          <li><span>Tools</span>Git / GitHub / Vercel / VS Code</li>
+          <li><span>Principles</span>Clean Code / Performance / Accessibility</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02 — Selected Work</span>
+        <h2>Things I've built.</h2>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <span class="work-tag">Featured</span>
+          <h3>grah4na-site</h3>
+          <p>My personal site — this one. Minimal 3-file setup, deployed on Vercel, built for speed.</p>
+          <div class="work-links">
+            <a href="https://github.com/grah4na/grah4na-site" target="_blank" rel="noopener">GitHub →</a>
+            <span>HTML • CSS • JS</span>
+          </div>
+        </article>
+        <article class="work-card">
+          <span class="work-tag">Coming soon</span>
+          <h3>Project Two</h3>
+          <p>Replace this with your next project. Add a short description and links.</p>
+          <div class="work-links">
+            <a href="#">Live →</a>
+            <span>Your Stack</span>
+          </div>
+        </article>
+        <article class="work-card">
+          <span class="work-tag">Coming soon</span>
+          <h3>Project Three</h3>
+          <p>Another placeholder. Duplicate and edit these cards to showcase your work.</p>
+          <div class="work-links">
+            <a href="#">Live →</a>
+            <span>Your Stack</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact-box">
+      <div>
+        <span class="section-num">03 — Contact</span>
+        <h2>Let's build something together.</h2>
+        <p class="lead">Have an idea or just want to say hi? My inbox is open.</p>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:hello@grahana.dev" class="btn btn-primary" id="emailBtn">hello@grahana.dev</a>
+        <div class="socials">
+          <a href="https://github.com/grah4na" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Grahana. Built with HTML, CSS & JS. Hosted on Vercel.</span>
+      <a href="#" id="backToTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
