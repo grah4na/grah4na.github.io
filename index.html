@@ -50,61 +50,19 @@
         </div>
       </div>
       <div class="hero-right">
-        <!-- Engraving illustration -->
-        <div class="engraving-wrap" aria-hidden="true">
-          <svg viewBox="0 0 340 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="engraving">
-            <!-- outer ornate oval -->
-            <ellipse cx="170" cy="210" rx="128" ry="168" stroke="#DFD9E2" stroke-width="1.6"/>
-            <ellipse cx="170" cy="210" rx="118" ry="158" stroke="#DFD9E2" stroke-width="0.9" stroke-dasharray="3 4" opacity="0.9"/>
-            <ellipse cx="170" cy="210" rx="108" ry="148" stroke="#DFD9E2" stroke-width="0.7" opacity="0.5"/>
-            <!-- crosshatch rays -->
-            <g stroke="#DFD9E2" stroke-width="0.6" opacity="0.85">
-              <!-- vertical / horizontal -->
-              <line x1="170" y1="42" x2="170" y2="78"/><line x1="170" y1="332" x2="170" y2="378"/>
-              <line x1="52" y1="210" x2="86" y2="210"/><line x1="254" y1="210" x2="288" y2="210"/>
-              <!-- diagonals -->
-              <line x1="86" y1="92" x2="110" y2="116"/><line x1="230" y1="294" x2="254" y2="318"/>
-              <line x1="254" y1="92" x2="230" y2="116"/><line x1="110" y1="294" x2="86" y2="318"/>
-              <!-- more rays -->
-              <line x1="170" y1="42" x2="164" y2="62"/><line x1="170" y1="42" x2="176" y2="62"/>
-            </g>
-            <!-- inner decorative circle -->
-            <circle cx="170" cy="210" r="72" stroke="#DFD9E2" stroke-width="1.2"/>
-            <circle cx="170" cy="210" r="62" stroke="#DFD9E2" stroke-width="0.7" opacity="0.6"/>
-            <!-- eye / compass illustration -->
-            <g stroke="#DFD9E2" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <!-- eye outline -->
-              <path d="M108 210 C108 182 135 158 170 158 C205 158 232 182 232 210 C232 238 205 262 170 262 C135 262 108 238 108 210 Z"/>
-              <!-- iris -->
-              <circle cx="170" cy="210" r="32"/>
-              <circle cx="170" cy="210" r="18"/>
-              <circle cx="170" cy="210" r="6" fill="#DFD9E2" stroke="none"/>
-              <!-- rays around iris -->
-              <path d="M170 178 L170 190 M170 230 L170 242 M138 210 L150 210 M190 210 L202 210 M147 187 L155 195 M185 225 L193 233 M193 187 L185 195 M155 225 L147 233"/>
-              <!-- top ornament -->
-              <path d="M154 138 C162 122 178 122 186 138 L170 152 Z"/>
-              <path d="M154 282 C162 298 178 298 186 282 L170 268 Z"/>
-            </g>
-            <!-- bottom banner -->
-            <g stroke="#DFD9E2" stroke-width="0.9" fill="none">
-              <rect x="112" y="342" width="116" height="28" rx="1"/>
-              <line x1="112" y1="350" x2="228" y2="350" stroke-width="0.5" opacity="0.5"/>
-            </g>
-            <text x="170" y="360" text-anchor="middle" fill="#DFD9E2" font-family="JetBrains Mono, monospace" font-size="8.5" letter-spacing="3" font-weight="500">GRAHANA — 2026</text>
-            <!-- corner flourishes -->
-            <g stroke="#DFD9E2" stroke-width="0.8" opacity="0.9" fill="none">
-              <path d="M58 62 C58 38 82 38 82 62 C82 38 106 38 106 62"/>
-              <path d="M234 62 C234 38 258 38 258 62 C258 38 282 38 282 62"/>
-              <path d="M58 358 C58 382 82 382 82 358 C82 382 106 382 106 358"/>
-              <path d="M234 358 C234 382 258 382 258 358 C258 382 282 382 282 358"/>
-            </g>
-            <!-- fine hatching texture -->
-            <g stroke="#DFD9E2" stroke-width="0.35" opacity="0.35">
-              <line x1="120" y1="78" x2="128" y2="86"/><line x1="124" y1="76" x2="132" y2="84"/><line x1="128" y1="74" x2="136" y2="82"/>
-              <line x1="212" y1="74" x2="220" y2="82"/><line x1="216" y1="76" x2="224" y2="84"/><line x1="220" y1="78" x2="228" y2="86"/>
-              <line x1="212" y1="334" x2="220" y2="342"/><line x1="216" y1="336" x2="224" y2="344"/><line x1="220" y1="338" x2="228" y2="346"/>
-              <line x1="120" y1="334" x2="128" y2="342"/><line x1="116" y1="336" x2="124" y2="344"/><line x1="112" y1="338" x2="120" y2="346"/>
-            </g>
+        <div class="profile-frame">
+          <div class="profile-border">
+            <img src="profile.jpg" alt="Grahana profile" class="profile-img" width="633" height="633" loading="eager" />
+          </div>
+          <div class="profile-caption mono">GRAHANA — 2026 • PROFILE</div>
+          <!-- subtle engraving overlay flourishes -->
+          <svg class="profile-ornament" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="8" y="8" width="324" height="324" stroke="#DFD9E2" stroke-width="1.2" opacity="0.95"/>
+            <rect x="14" y="14" width="312" height="312" stroke="#DFD9E2" stroke-width="0.7" stroke-dasharray="4 5" opacity="0.7"/>
+            <path d="M28 28 C28 14 42 14 42 28 C42 14 56 14 56 28" stroke="#DFD9E2" stroke-width="0.8"/>
+            <path d="M284 28 C284 14 298 14 298 28 C298 14 312 14 312 28" stroke="#DFD9E2" stroke-width="0.8"/>
+            <path d="M28 312 C28 326 42 326 42 312 C42 326 56 326 56 312" stroke="#DFD9E2" stroke-width="0.8"/>
+            <path d="M284 312 C284 326 298 326 298 312 C298 326 312 326 312 312" stroke="#DFD9E2" stroke-width="0.8"/>
           </svg>
         </div>
       </div>
