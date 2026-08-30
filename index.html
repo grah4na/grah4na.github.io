@@ -3,155 +3,265 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grahana — Developer</title>
-  <meta name="description" content="Portfolio of Grahana — Developer, builder, and creator." />
+  <title>Grahana — Builder of Things That Don't Break</title>
+  <meta name="description" content="Grahana — Security engineer & builder. Portfolio, projects, and writing." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- NAV -->
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="#" class="logo">grah<span>4</span>na</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#home" class="logo">GRAHANA<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/grah4na" target="_blank" rel="noopener" class="nav-cta">GitHub ↗</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="hero">
+  <!-- HERO -->
+  <header id="home" class="hero">
     <div class="container hero-grid">
-      <div class="hero-text">
-        <p class="eyebrow">Available for new opportunities • 2026</p>
-        <h1>Hi, I'm <span class="accent">Grahana</span><br>— I build things for the web.</h1>
-        <p class="lead">
-          Developer focused on clean code, minimal design, and fast experiences.
-          I love turning ideas into real products.
+      <div class="hero-left">
+        <p class="eyebrow">SECURITY ENGINEER • BUILDER — 2026</p>
+        <h1 class="display">
+          I BUILD<br>
+          THINGS THAT<br>
+          DON'T BREAK
+        </h1>
+        <p class="hero-desc">
+          I'm Grahana — I design resilient systems, ship minimal tools, and write about security, engineering, and the craft of making things that last.
         </p>
         <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">View my work</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+          <a href="#blog" class="btn btn-outline">READ BLOG</a>
+          <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add your resume PDF to /resume.pdf'); return false;">DOWNLOAD RESUME</a>
         </div>
-        <div class="hero-meta">
-          <span><strong>Location</strong> Remote</span>
-          <span class="dot">•</span>
-          <span><strong>Focus</strong> Web Development</span>
+        <div class="hero-meta mono">
+          <span>BASED — REMOTE</span>
+          <span class="sep">/</span>
+          <span>FOCUS — SYSTEMS & WEB</span>
         </div>
       </div>
-      <div class="hero-card">
-        <div class="card">
-          <div class="card-header">
-            <span class="card-dots"><i></i><i></i><i></i></span>
-            <span class="card-title">grahana.js</span>
-          </div>
-<pre><code><span class="c">// whoami</span>
-<span class="k">const</span> dev = {
-  name: <span class="s">"Grahana"</span>,
-  role: <span class="s">"Developer"</span>,
-  stack: [<span class="s">"JavaScript"</span>, <span class="s">"React"</span>, <span class="s">"Node.js"</span>],
-  passion: <span class="s">"Building for the web"</span>,
-  available: <span class="b">true</span>
-};
-
-<span class="k">export default</span> dev;</code></pre>
-          <div class="card-footer">
-            <span>● Online and building</span>
-          </div>
+      <div class="hero-right">
+        <!-- Engraving illustration -->
+        <div class="engraving-wrap" aria-hidden="true">
+          <svg viewBox="0 0 340 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="engraving">
+            <!-- outer ornate oval -->
+            <ellipse cx="170" cy="210" rx="128" ry="168" stroke="#DFD9E2" stroke-width="1.6"/>
+            <ellipse cx="170" cy="210" rx="118" ry="158" stroke="#DFD9E2" stroke-width="0.9" stroke-dasharray="3 4" opacity="0.9"/>
+            <ellipse cx="170" cy="210" rx="108" ry="148" stroke="#DFD9E2" stroke-width="0.7" opacity="0.5"/>
+            <!-- crosshatch rays -->
+            <g stroke="#DFD9E2" stroke-width="0.6" opacity="0.85">
+              <!-- vertical / horizontal -->
+              <line x1="170" y1="42" x2="170" y2="78"/><line x1="170" y1="332" x2="170" y2="378"/>
+              <line x1="52" y1="210" x2="86" y2="210"/><line x1="254" y1="210" x2="288" y2="210"/>
+              <!-- diagonals -->
+              <line x1="86" y1="92" x2="110" y2="116"/><line x1="230" y1="294" x2="254" y2="318"/>
+              <line x1="254" y1="92" x2="230" y2="116"/><line x1="110" y1="294" x2="86" y2="318"/>
+              <!-- more rays -->
+              <line x1="170" y1="42" x2="164" y2="62"/><line x1="170" y1="42" x2="176" y2="62"/>
+            </g>
+            <!-- inner decorative circle -->
+            <circle cx="170" cy="210" r="72" stroke="#DFD9E2" stroke-width="1.2"/>
+            <circle cx="170" cy="210" r="62" stroke="#DFD9E2" stroke-width="0.7" opacity="0.6"/>
+            <!-- eye / compass illustration -->
+            <g stroke="#DFD9E2" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <!-- eye outline -->
+              <path d="M108 210 C108 182 135 158 170 158 C205 158 232 182 232 210 C232 238 205 262 170 262 C135 262 108 238 108 210 Z"/>
+              <!-- iris -->
+              <circle cx="170" cy="210" r="32"/>
+              <circle cx="170" cy="210" r="18"/>
+              <circle cx="170" cy="210" r="6" fill="#DFD9E2" stroke="none"/>
+              <!-- rays around iris -->
+              <path d="M170 178 L170 190 M170 230 L170 242 M138 210 L150 210 M190 210 L202 210 M147 187 L155 195 M185 225 L193 233 M193 187 L185 195 M155 225 L147 233"/>
+              <!-- top ornament -->
+              <path d="M154 138 C162 122 178 122 186 138 L170 152 Z"/>
+              <path d="M154 282 C162 298 178 298 186 282 L170 268 Z"/>
+            </g>
+            <!-- bottom banner -->
+            <g stroke="#DFD9E2" stroke-width="0.9" fill="none">
+              <rect x="112" y="342" width="116" height="28" rx="1"/>
+              <line x1="112" y1="350" x2="228" y2="350" stroke-width="0.5" opacity="0.5"/>
+            </g>
+            <text x="170" y="360" text-anchor="middle" fill="#DFD9E2" font-family="JetBrains Mono, monospace" font-size="8.5" letter-spacing="3" font-weight="500">GRAHANA — 2026</text>
+            <!-- corner flourishes -->
+            <g stroke="#DFD9E2" stroke-width="0.8" opacity="0.9" fill="none">
+              <path d="M58 62 C58 38 82 38 82 62 C82 38 106 38 106 62"/>
+              <path d="M234 62 C234 38 258 38 258 62 C258 38 282 38 282 62"/>
+              <path d="M58 358 C58 382 82 382 82 358 C82 382 106 382 106 358"/>
+              <path d="M234 358 C234 382 258 382 258 358 C258 382 282 382 282 358"/>
+            </g>
+            <!-- fine hatching texture -->
+            <g stroke="#DFD9E2" stroke-width="0.35" opacity="0.35">
+              <line x1="120" y1="78" x2="128" y2="86"/><line x1="124" y1="76" x2="132" y2="84"/><line x1="128" y1="74" x2="136" y2="82"/>
+              <line x1="212" y1="74" x2="220" y2="82"/><line x1="216" y1="76" x2="224" y2="84"/><line x1="220" y1="78" x2="228" y2="86"/>
+              <line x1="212" y1="334" x2="220" y2="342"/><line x1="216" y1="336" x2="224" y2="344"/><line x1="220" y1="338" x2="228" y2="346"/>
+              <line x1="120" y1="334" x2="128" y2="342"/><line x1="116" y1="336" x2="124" y2="344"/><line x1="112" y1="338" x2="120" y2="346"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
   </header>
 
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-num">01 — About</span>
-        <h2>Minimal, fast, and thoughtful.</h2>
-      </div>
+      <div class="section-label mono">01 — ABOUT</div>
       <div class="about-grid">
-        <p class="about-text">
-          I'm Grahana, a developer who enjoys crafting simple and effective digital experiences.
-          I focus on writing maintainable code, learning continuously, and shipping products that actually help people.
-          <br><br>
-          When I'm not coding, I'm exploring new tech, contributing to open source, or refining this site.
-        </p>
-        <ul class="skills">
-          <li><span>Frontend</span>HTML / CSS / JavaScript / React</li>
-          <li><span>Backend</span>Node.js / APIs</li>
-          <li><span>Tools</span>Git / GitHub / Vercel / VS Code</li>
-          <li><span>Principles</span>Clean Code / Performance / Accessibility</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="work" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-num">02 — Selected Work</span>
-        <h2>Things I've built.</h2>
-      </div>
-      <div class="work-grid">
-        <article class="work-card">
-          <span class="work-tag">Featured</span>
-          <h3>grah4na-site</h3>
-          <p>My personal site — this one. Minimal 3-file setup, deployed on Vercel, built for speed.</p>
-          <div class="work-links">
-            <a href="https://github.com/grah4na/grah4na-site" target="_blank" rel="noopener">GitHub →</a>
-            <span>HTML • CSS • JS</span>
+        <div>
+          <h2>WORRY LESS. BUILD BETTER.</h2>
+          <p class="about-text">
+            I'm a security-minded builder who cares about correctness before cleverness. My work lives at the intersection of systems, web, and tooling — fast, minimal, and hard to break.
+          </p>
+          <p class="about-text muted">
+            Currently exploring resilient architectures, developer experience, and open source. Previously shipping products that need to work when it matters. I write about what I learn.
+          </p>
+        </div>
+        <div class="about-side mono">
+          <div class="about-block">
+            <span class="about-kicker">STACK</span>
+            <span>JS / TS • REACT • NODE • RUST (LEARNING)</span>
           </div>
-        </article>
-        <article class="work-card">
-          <span class="work-tag">Coming soon</span>
-          <h3>Project Two</h3>
-          <p>Replace this with your next project. Add a short description and links.</p>
-          <div class="work-links">
-            <a href="#">Live →</a>
-            <span>Your Stack</span>
+          <div class="about-block">
+            <span class="about-kicker">FOCUS</span>
+            <span>SECURITY • SYSTEMS • DX • PERFORMANCE</span>
           </div>
-        </article>
-        <article class="work-card">
-          <span class="work-tag">Coming soon</span>
-          <h3>Project Three</h3>
-          <p>Another placeholder. Duplicate and edit these cards to showcase your work.</p>
-          <div class="work-links">
-            <a href="#">Live →</a>
-            <span>Your Stack</span>
+          <div class="about-block">
+            <span class="about-kicker">PRINCIPLES</span>
+            <span>MINIMAL • CORRECT • MAINTAINABLE • FAST</span>
           </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container contact-box">
-      <div>
-        <span class="section-num">03 — Contact</span>
-        <h2>Let's build something together.</h2>
-        <p class="lead">Have an idea or just want to say hi? My inbox is open.</p>
-      </div>
-      <div class="contact-actions">
-        <a href="mailto:hello@grahana.dev" class="btn btn-primary" id="emailBtn">hello@grahana.dev</a>
-        <div class="socials">
-          <a href="https://github.com/grah4na" target="_blank" rel="noopener">GitHub</a>
-          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
-          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <div class="about-block">
+            <span class="about-kicker">ELSEWHERE</span>
+            <span>GITHUB / LINKEDIN / EMAIL BELOW</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label mono">02 — PROJECTS</div>
+      <div class="section-head">
+        <h2>SELECTED WORK</h2>
+        <p class="mono small">THREE BUILDS • LINKS TO CODE & LIVE DEMOS</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="card-top mono">
+            <span>001 / FEATURED</span>
+            <span>2026</span>
+          </div>
+          <h3>GRAH4NA-SITE</h3>
+          <p>This portfolio. Solid purple, flat colors, fine-line engraving. Zero frameworks, 3 files, ship-fast on Vercel.</p>
+          <div class="tags mono"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card-links mono">
+            <a href="https://github.com/grah4na/grah4na-site" target="_blank" rel="noopener">GITHUB ↗</a>
+            <a href="#home">LIVE ↗</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="card-top mono">
+            <span>002</span>
+            <span>2025 — 2026</span>
+          </div>
+          <h3>SECURE PIPELINE KIT</h3>
+          <p>Template for hardened CI/CD — signed builds, SBOM, ephemeral runners. Replace this with your real project.</p>
+          <div class="tags mono"><span>RUST</span><span>DOCKER</span><span>GITHUB ACTIONS</span></div>
+          <div class="card-links mono">
+            <a href="#">GITHUB ↗</a>
+            <a href="#">DEMO ↗</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="card-top mono">
+            <span>003</span>
+            <span>WIP</span>
+          </div>
+          <h3>MINIMAL NOTES</h3>
+          <p>Encrypted, offline-first notes that sync on your terms. No tracking, no bloat. Placeholder — swap in your work.</p>
+          <div class="tags mono"><span>TS</span><span>CRYPTO</span><span>PWA</span></div>
+          <div class="card-links mono">
+            <a href="#">GITHUB ↗</a>
+            <a href="#">DEMO ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG LIST -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-label mono">03 — BLOG</div>
+      <div class="section-head">
+        <h2>WRITING</h2>
+        <p class="mono small">NOTES ON BUILDING THINGS THAT DON'T BREAK</p>
+      </div>
+      <div class="blog-list" id="blogList">
+        <!-- injected by JS, fallback noscript below -->
+        <noscript>
+          <article class="blog-item"><div class="blog-meta mono">2026-08-10 • 4 MIN</div><h3>Designing for Failure First</h3><p>Why the best systems are boring, predictable, and easy to reason about under pressure.</p></article>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG POST VIEW (simulated multi-page) -->
+  <section id="postView" class="post-view hidden">
+    <div class="container">
+      <a href="#blog" class="mono back-link" id="backToBlog">← BACK TO WRITING</a>
+      <article class="post-body">
+        <div class="mono post-meta" id="postMeta"></div>
+        <h1 id="postTitle"></h1>
+        <div id="postContent" class="prose"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label mono">04 — CONTACT</div>
+      <div class="contact-grid">
+        <div>
+          <h2>LET'S TALK</h2>
+          <p>Have an idea, a security question, or just want to say hi? I'm open to collaborations and conversations.</p>
+        </div>
+        <div class="contact-links mono">
+          <a href="mailto:hello@grahana.dev" class="contact-link">EMAIL — HELLO@GRAHANA.DEV ↗</a>
+          <a href="https://github.com/grah4na" target="_blank" rel="noopener" class="contact-link">GITHUB — @GRAH4NA ↗</a>
+          <a href="#" class="contact-link">LINKEDIN — GRAHANA ↗</a>
+          <a href="#" class="contact-link">X / TWITTER — @GRAHANA ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER + QUOTE -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Grahana. Built with HTML, CSS & JS. Hosted on Vercel.</span>
-      <a href="#" id="backToTop">Back to top ↑</a>
+    <div class="container">
+      <div class="quote-wrap">
+        <div class="rule"></div>
+        <blockquote class="quote" id="quoteBlock">
+          <p id="quoteText">“SIMPLICITY IS A PREREQUISITE FOR RELIABILITY.”</p>
+          <cite class="mono" id="quoteCite">— EDSGER W. DIJKSTRA</cite>
+        </blockquote>
+        <div class="rule"></div>
+      </div>
+      <div class="footer-bottom mono">
+        <span>© <span id="year"></span> GRAHANA • BUILT WITH HTML / CSS / JS • HOSTED ON VERCEL</span>
+        <a href="#home">BACK TO TOP ↑</a>
+      </div>
     </div>
   </footer>
 
