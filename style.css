@@ -1,7 +1,28 @@
+:root{
+  --bg:#fff;
+  --ink:#000;
+  --soft:#333;
+  --muted:#555;
+  --link:#0000EE;
+  --line:#ccc;
+  --sel-bg:#000;
+  --sel-ink:#fff;
+}
+[data-theme="dark"]{
+  --bg:#0e0e11;
+  --ink:#e8e6e1;
+  --soft:#c9c4ba;
+  --muted:#9d978b;
+  --link:#8aa6ff;
+  --line:#2e2e34;
+  --sel-bg:#e8e6e1;
+  --sel-ink:#0e0e11;
+}
+html{scroll-behavior:smooth}
 body{
   margin:0;
-  background:#fff;
-  color:#000;
+  background:var(--bg);
+  color:var(--ink);
   font-family:"Courier Prime", "Courier New", monospace;
   font-size:16px;
   line-height:1.6;
@@ -19,10 +40,10 @@ body{
   border:none;
 }
 .landing h1{font-size:44px; margin:12px 0 4px}
-.landing .tagline{color:#333; margin:0 0 8px}
+.landing .tagline{color:var(--soft); margin:0 0 8px}
 .landing .about-line{max-width:480px; margin:0 auto 16px}
-.landing .eyebrow{font-size:14px; color:#555; margin:14px 0 0}
-.landing .motto{font-style:italic; color:#333; max-width:440px; margin:0 auto 18px}
+.landing .eyebrow{font-size:14px; color:var(--muted); margin:14px 0 0}
+.landing .motto{font-style:italic; color:var(--soft); max-width:440px; margin:0 auto 18px}
 .landing-nav{margin:10px 0}
 .landing-nav a{margin:0 6px}
 nav{
@@ -40,17 +61,31 @@ h2{font-size:24px; margin:0 0 8px}
 h3{font-size:18px; margin:18px 0 4px}
 p{margin:0 0 12px}
 ul{margin:0 0 12px; padding-left:22px}
-section{margin:0}
-.label{font-size:14px; color:#555; margin:0}
-.small{font-size:14px; color:#333}
-.muted{color:#555}
-a{color:#0000EE; overflow-wrap:break-word}
+section{margin:0; scroll-margin-top:16px}
+.label{font-size:14px; color:var(--muted); margin:0}
+.small{font-size:14px; color:var(--soft)}
+.muted{color:var(--muted)}
+a{color:var(--link); overflow-wrap:break-word}
 img{max-width:100%; height:auto}
-hr{border:none; border-top:1px solid #ccc; margin:24px 0}
-.quote{margin:0 0 12px; padding-left:12px; border-left:3px solid #ccc}
+hr{border:none; border-top:1px solid var(--line); margin:24px 0}
+.quote{margin:0 0 12px; padding-left:12px; border-left:3px solid var(--line)}
 .quote p{font-style:italic; margin:0 0 4px}
-.quote cite{font-size:13px; color:#555; font-style:normal}
-footer{font-size:14px; color:#333}
+.quote cite{font-size:13px; color:var(--muted); font-style:normal}
+footer{font-size:14px; color:var(--soft)}
+
+/* inverted text selection — follows theme */
+::selection{background:var(--sel-bg); color:var(--sel-ink); text-shadow:none}
+::-moz-selection{background:var(--sel-bg); color:var(--sel-ink); text-shadow:none}
+
+/* dark-mode toggle */
+.theme-toggle{
+  position:fixed; top:12px; right:12px; z-index:50;
+  font:inherit; font-size:13px;
+  background:var(--bg); color:var(--ink);
+  border:1px solid var(--line); border-radius:999px;
+  padding:6px 12px; cursor:pointer;
+}
+.theme-toggle:hover{border-color:var(--muted)}
 
 /* phones */
 @media(max-width:600px){
@@ -63,3 +98,16 @@ footer{font-size:14px; color:#333}
   h2{font-size:21px}
   ul{padding-left:18px}
 }
+
+/* motion */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+
+/* starry night — canvas injected by JS, visible in dark mode only */
+#starfield{
+  position:fixed; inset:0; width:100%; height:100%;
+  z-index:0; pointer-events:none; display:none;
+}
+[data-theme="dark"] #starfield{display:block}
+[data-theme="dark"] main{position:relative; z-index:1}
