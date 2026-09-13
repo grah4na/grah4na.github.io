@@ -1,227 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grahana — Builder of Things That Don't Break</title>
-  <meta name="description" content="Grahana — Security engineer & builder. Portfolio, projects, and writing." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Grahana — Security Engineer</title>
+<meta name="description" content="Nandan Kumar C — Cybersecurity, Backend Engineering, Linux." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="icon" type="image/jpeg" href="favicon.jpg" />
+<link rel="apple-touch-icon" href="favicon.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="#home" class="logo">GRAHANA<span>.</span></a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <ul class="nav-links">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#blog">BLOG</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
+<main class="landing">
+<img class="pfp" src="favicon.jpg" alt="Grahana portrait" width="300" height="300" />
+<h1>GRAHANA</h1>
+<h4>Cybersecurity • web application security • rust</h4>
+<p>18 y/o into computers, OS internals, networking, low level, backend &amp; web app security , doing open-source contributions whenever possible..Always been drawn to tech from an early age. Outside of all this, I read books and watch movies </p>
+<blockquote class="motto">“It's a privilege to be exhausted by the goal you chose for yourself.”</blockquote>
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <p class="eyebrow">SECURITY ENGINEER • BUILDER — 2026</p>
-        <h1 class="display">
-          I BUILD<br>
-          THINGS THAT<br>
-          DON'T BREAK
-        </h1>
-        <p class="hero-desc">
-          I'm Grahana — I design resilient systems, ship minimal tools, and write about security, engineering, and the craft of making things that last.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
-          <a href="#blog" class="btn btn-outline">READ BLOG</a>
-          <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add your resume PDF to /resume.pdf'); return false;">DOWNLOAD RESUME</a>
-        </div>
-        <div class="hero-meta mono">
-          <span>BASED — REMOTE</span>
-          <span class="sep">/</span>
-          <span>FOCUS — SYSTEMS & WEB</span>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="profile-frame">
-          <div class="profile-border">
-            <img src="profile-illustration.png" alt="Grahana — engraved portrait, hair filled dark purple, dress white" class="profile-img" width="800" height="800" loading="eager" />
-          </div>
-
-          <svg class="profile-ornament" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="8" y="8" width="324" height="324" stroke="#DFD9E2" stroke-width="1.1" opacity="0.9"/>
-            <rect x="14" y="14" width="312" height="312" stroke="#DFD9E2" stroke-width="0.6" stroke-dasharray="4 5" opacity="0.6"/>
-            <path d="M28 28 C28 14 42 14 42 28 C42 14 56 14 56 28" stroke="#DFD9E2" stroke-width="0.8"/>
-            <path d="M284 28 C284 14 298 14 298 28 C298 14 312 14 312 28" stroke="#DFD9E2" stroke-width="0.8"/>
-            <path d="M28 312 C28 326 42 326 42 312 C42 326 56 326 56 312" stroke="#DFD9E2" stroke-width="0.8"/>
-            <path d="M284 312 C284 326 298 326 298 312 C298 326 312 326 312 312" stroke="#DFD9E2" stroke-width="0.8"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-label mono">01 — ABOUT</div>
-      <div class="about-grid">
-        <div>
-          <h2>WORRY LESS. BUILD BETTER.</h2>
-          <p class="about-text">
-            I'm a security-minded builder who cares about correctness before cleverness. My work lives at the intersection of systems, web, and tooling — fast, minimal, and hard to break.
-          </p>
-          <p class="about-text muted">
-            Currently exploring resilient architectures, developer experience, and open source. Previously shipping products that need to work when it matters. I write about what I learn.
-          </p>
-        </div>
-        <div class="about-side mono">
-          <div class="about-block">
-            <span class="about-kicker">STACK</span>
-            <span>JS / TS • REACT • NODE • RUST (LEARNING)</span>
-          </div>
-          <div class="about-block">
-            <span class="about-kicker">FOCUS</span>
-            <span>SECURITY • SYSTEMS • DX • PERFORMANCE</span>
-          </div>
-          <div class="about-block">
-            <span class="about-kicker">PRINCIPLES</span>
-            <span>MINIMAL • CORRECT • MAINTAINABLE • FAST</span>
-          </div>
-          <div class="about-block">
-            <span class="about-kicker">ELSEWHERE</span>
-            <span>GITHUB / LINKEDIN / EMAIL BELOW</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-label mono">02 — PROJECTS</div>
-      <div class="section-head">
-        <h2>SELECTED WORK</h2>
-        <p class="mono small">THREE BUILDS • LINKS TO CODE & LIVE DEMOS</p>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="card-top mono">
-            <span>001 / FEATURED</span>
-            <span>2026</span>
-          </div>
-          <h3>GRAH4NA-SITE</h3>
-          <p>This portfolio. Solid purple, flat colors, fine-line engraving. Zero frameworks, 3 files, ship-fast on Vercel.</p>
-          <div class="tags mono"><span>HTML</span><span>CSS</span><span>JS</span></div>
-          <div class="card-links mono">
-            <a href="https://github.com/grah4na/grah4na-site" target="_blank" rel="noopener">GITHUB ↗</a>
-            <a href="#home">LIVE ↗</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="card-top mono">
-            <span>002</span>
-            <span>2025 — 2026</span>
-          </div>
-          <h3>SECURE PIPELINE KIT</h3>
-          <p>Template for hardened CI/CD — signed builds, SBOM, ephemeral runners. Replace this with your real project.</p>
-          <div class="tags mono"><span>RUST</span><span>DOCKER</span><span>GITHUB ACTIONS</span></div>
-          <div class="card-links mono">
-            <a href="#">GITHUB ↗</a>
-            <a href="#">DEMO ↗</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="card-top mono">
-            <span>003</span>
-            <span>WIP</span>
-          </div>
-          <h3>MINIMAL NOTES</h3>
-          <p>Encrypted, offline-first notes that sync on your terms. No tracking, no bloat. Placeholder — swap in your work.</p>
-          <div class="tags mono"><span>TS</span><span>CRYPTO</span><span>PWA</span></div>
-          <div class="card-links mono">
-            <a href="#">GITHUB ↗</a>
-            <a href="#">DEMO ↗</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG LIST -->
-  <section id="blog" class="section">
-    <div class="container">
-      <div class="section-label mono">03 — BLOG</div>
-      <div class="section-head">
-        <h2>WRITING</h2>
-        <p class="mono small">NOTES ON BUILDING THINGS THAT DON'T BREAK</p>
-      </div>
-      <div class="blog-list" id="blogList">
-        <!-- injected by JS, fallback noscript below -->
-        <noscript>
-          <article class="blog-item"><div class="blog-meta mono">2026-08-10 • 4 MIN</div><h3>Designing for Failure First</h3><p>Why the best systems are boring, predictable, and easy to reason about under pressure.</p></article>
-        </noscript>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG POST VIEW (simulated multi-page) -->
-  <section id="postView" class="post-view hidden">
-    <div class="container">
-      <a href="#blog" class="mono back-link" id="backToBlog">← BACK TO WRITING</a>
-      <article class="post-body">
-        <div class="mono post-meta" id="postMeta"></div>
-        <h1 id="postTitle"></h1>
-        <div id="postContent" class="prose"></div>
-      </article>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-label mono">04 — CONTACT</div>
-      <div class="contact-grid">
-        <div>
-          <h2>LET'S TALK</h2>
-          <p>Have an idea, a security question, or just want to say hi? I'm open to collaborations and conversations.</p>
-        </div>
-        <div class="contact-links mono">
-          <a href="mailto:hello@grahana.dev" class="contact-link">EMAIL — HELLO@GRAHANA.DEV ↗</a>
-          <a href="https://github.com/grah4na" target="_blank" rel="noopener" class="contact-link">GITHUB — @GRAH4NA ↗</a>
-          <a href="#" class="contact-link">LINKEDIN — GRAHANA ↗</a>
-          <a href="#" class="contact-link">X / TWITTER — @GRAHANA ↗</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER + QUOTE -->
-  <footer class="footer">
-    <div class="container">
-      <div class="quote-wrap">
-        <div class="rule"></div>
-        <blockquote class="quote" id="quoteBlock">
-          <p id="quoteText">“SIMPLICITY IS A PREREQUISITE FOR RELIABILITY.”</p>
-          <cite class="mono" id="quoteCite">— EDSGER W. DIJKSTRA</cite>
-        </blockquote>
-        <div class="rule"></div>
-      </div>
-      <div class="footer-bottom mono">
-        <span>© <span id="year"></span> GRAHANA • BUILT WITH HTML / CSS / JS • HOSTED ON VERCEL</span>
-        <a href="#home">BACK TO TOP ↑</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<nav>
+<a href="about.html">about</a>
+<a href="projects.html">projects</a>
+<a href="wins.html">wins</a>
+<a href="blog.html">blog</a>
+<a href="contact.html">contact</a>
+</nav>
+</main>
 </body>
 </html>
