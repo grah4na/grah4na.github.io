@@ -19,7 +19,7 @@ if (qt && qc) { qt.textContent = q.text; qc.textContent = q.cite; }
   var meta = document.querySelector('meta[name="theme-color"]');
   var stored = null;
   try { stored = localStorage.getItem('grahana-theme'); } catch (e) {}
-  var dark = stored === 'dark' || (stored === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  var dark = stored === 'dark';
 
   var btn = document.createElement('button');
   btn.id = 'themeToggle';
