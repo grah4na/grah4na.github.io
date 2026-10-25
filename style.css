@@ -30,27 +30,26 @@ body{
 
 /* landing */
 .landing{
-  text-align:center;
+  text-align:left;
   padding:40px 16px 20px;
+  min-height:100vh;
+  min-height:100dvh;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
-.pfp{
-  width:150px; height:150px;
-  border-radius:50%;
-  object-fit:cover;
-  border:none;
-}
-.landing h1{font-size:44px; margin:12px 0 4px}
+.landing h1{font-family:"Orbitron", "Courier Prime", monospace; font-weight:700; letter-spacing:0.06em; font-size:22px; margin:0 0 4px}
 .landing .tagline{color:var(--soft); margin:0 0 8px}
-.landing .about-line{max-width:480px; margin:0 auto 16px}
+.landing .about-line{max-width:480px; margin:0 0 16px}
 .landing .eyebrow{font-size:14px; color:var(--muted); margin:14px 0 0}
-.landing .motto{font-style:italic; color:var(--soft); max-width:440px; margin:0 auto 18px}
-.landing-nav{margin:10px 0}
-.landing-nav a{margin:0 6px}
+.landing .motto{font-style:italic; color:var(--soft); max-width:440px; margin:0 0 18px}
+.landing-nav{margin:10px 0 0}
+.landing-nav a{margin:0 6px 0 0}
 nav{
   font-size:14px;
   display:flex; gap:18px; flex-wrap:wrap;
 }
-.landing nav{justify-content:center}
 nav a{text-decoration:none}
 .scroll-hint{display:none}
 
@@ -91,8 +90,7 @@ footer{font-size:14px; color:var(--soft)}
 @media(max-width:600px){
   body{font-size:15px}
   .landing{padding:32px 14px 16px}
-  .pfp{width:120px; height:120px}
-  .landing h1{font-size:34px}
+  .landing h1{font-size:17px}
   main{padding:8px 14px 40px}
   nav{gap:14px; font-size:13px}
   h2{font-size:21px}
