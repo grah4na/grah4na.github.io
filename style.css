@@ -5,7 +5,7 @@
   --muted:#555;
   --link:#0000EE;
   --line:#ccc;
-  --sel-bg:#000;
+  --sel-bg:#444;
   --sel-ink:#fff;
 }
 [data-theme="dark"]{
@@ -56,8 +56,9 @@ nav a{text-decoration:none}
 /* content */
 main{max-width:650px; margin:0 auto; padding:10px 16px 50px}
 h1,h2,h3{font-weight:700; margin:0 0 8px}
-h2{font-size:24px; margin:0 0 8px}
-h3{font-size:18px; margin:18px 0 4px}
+h1{font-size:22px}
+h2{font-size:18px; margin:0 0 8px}
+h3{font-size:16px; margin:18px 0 4px}
 p{margin:0 0 12px}
 ul{margin:0 0 12px; padding-left:22px}
 section{margin:0; scroll-margin-top:16px}
@@ -79,11 +80,13 @@ footer{font-size:14px; color:var(--soft)}
 /* dark-mode toggle */
 .theme-toggle{
   position:fixed; top:12px; right:12px; z-index:50;
-  font:inherit; font-size:13px;
+  width:32px; height:32px;
+  display:inline-flex; align-items:center; justify-content:center;
   background:var(--bg); color:var(--ink);
-  border:1px solid var(--line); border-radius:999px;
-  padding:6px 12px; cursor:pointer;
+  border:1px solid var(--line); border-radius:50%;
+  padding:0; cursor:pointer; line-height:1;
 }
+.theme-toggle svg{width:14px; height:14px; display:block}
 .theme-toggle:hover{border-color:var(--muted)}
 
 /* phones */
@@ -93,7 +96,8 @@ footer{font-size:14px; color:var(--soft)}
   .landing h1{font-size:17px}
   main{padding:8px 14px 40px}
   nav{gap:14px; font-size:13px}
-  h2{font-size:21px}
+  h1{font-size:20px}
+  h2{font-size:17px}
   ul{padding-left:18px}
 }
 
