@@ -18,9 +18,10 @@
   --sel-bg:#e8e6e1;
   --sel-ink:#0e0e11;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
 body{
   margin:0;
+  overflow-x:hidden;
   background:var(--bg);
   color:var(--ink);
   font-family:'Inter', sans-serif;
@@ -67,6 +68,7 @@ nav a{text-decoration:none}
 main{max-width:650px; margin:0 auto; padding:10px 16px 50px}
 .contact{font-size:16px}
 .contact h1{font-size:20px}
+.about{font-size:16px}
 h1,h2,h3{font-weight:700; margin:0 0 8px; line-height:1.25; letter-spacing:-0.01em}
 h1{font-size:22px}
 h2{font-size:18px; margin:0 0 8px}
@@ -104,10 +106,13 @@ footer{font-size:14px; color:var(--soft)}
 
 /* phones */
 @media(max-width:600px){
-  .landing{padding:32px 14px 16px}
+  .landing{padding:32px max(14px, env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left))}
+  main{padding:8px max(14px, env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left))}
+  .theme-toggle{width:40px; height:40px; top:max(12px, env(safe-area-inset-top)); right:max(12px, env(safe-area-inset-right))}
+  .theme-toggle svg{width:16px; height:16px}
   .landing h1{font-size:17px}
-  main{padding:8px 14px 40px}
-  nav{gap:14px; font-size:13px}
+  nav{gap:14px 18px; font-size:13px}
+  nav a{padding:4px 0}
   h1{font-size:20px}
   h2{font-size:17px}
   ul{padding-left:18px}
@@ -125,3 +130,10 @@ footer{font-size:14px; color:var(--soft)}
 }
 [data-theme="dark"] #starfield{display:block}
 [data-theme="dark"] main{position:relative; z-index:1}
+
+/* lenis smooth scrolling */
+html.lenis, html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto !important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+.lenis.lenis-smooth iframe{pointer-events:none}
