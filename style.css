@@ -1,9 +1,9 @@
 :root{
   --bg:#fff;
-  --ink:#000;
+  --ink:#1a1a1a;
   --soft:#333;
   --muted:#555;
-  --link:#0000EE;
+  --link:#1a56db;
   --line:#ccc;
   --sel-bg:#444;
   --sel-ink:#fff;
@@ -23,15 +23,23 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--ink);
-  font-family:"Courier Prime", "Courier New", monospace;
-  font-size:16px;
+  font-family:'Inter', sans-serif;
+  font-weight:400;
+  font-size:18px;
   line-height:1.6;
+  letter-spacing:0.01em;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  transition:background-color .25s ease, color .25s ease;
 }
 
 /* landing */
 .landing{
   text-align:left;
   padding:40px 16px 20px;
+  max-width:650px;
+  margin:0 auto;
   min-height:100vh;
   min-height:100dvh;
   box-sizing:border-box;
@@ -39,8 +47,10 @@ body{
   flex-direction:column;
   justify-content:center;
 }
-.landing h1{font-family:"Orbitron", "Courier Prime", monospace; font-weight:700; letter-spacing:0.06em; font-size:22px; margin:0 0 4px}
-.landing .tagline{color:var(--soft); margin:0 0 8px}
+.landing h1{font-family:'Inter', sans-serif; font-weight:700; letter-spacing:0.04em; font-size:26px; margin:0 0 4px}
+.landing .handle{font-size:13px; font-weight:500; letter-spacing:0.14em; color:var(--muted); margin:0 0 8px}
+.landing .intro{font-size:16px}
+.landing .tagline{color:var(--muted); font-size:15px; font-weight:400; letter-spacing:0.02em; margin:0 0 18px}
 .landing .about-line{max-width:480px; margin:0 0 16px}
 .landing .eyebrow{font-size:14px; color:var(--muted); margin:14px 0 0}
 .landing .motto{font-style:italic; color:var(--soft); max-width:440px; margin:0 0 18px}
@@ -55,7 +65,9 @@ nav a{text-decoration:none}
 
 /* content */
 main{max-width:650px; margin:0 auto; padding:10px 16px 50px}
-h1,h2,h3{font-weight:700; margin:0 0 8px}
+.contact{font-size:16px}
+.contact h1{font-size:20px}
+h1,h2,h3{font-weight:700; margin:0 0 8px; line-height:1.25; letter-spacing:-0.01em}
 h1{font-size:22px}
 h2{font-size:18px; margin:0 0 8px}
 h3{font-size:16px; margin:18px 0 4px}
@@ -66,6 +78,7 @@ section{margin:0; scroll-margin-top:16px}
 .small{font-size:14px; color:var(--soft)}
 .muted{color:var(--muted)}
 a{color:var(--link); overflow-wrap:break-word}
+b,strong{font-weight:600}
 img{max-width:100%; height:auto}
 hr{border:none; border-top:1px solid var(--line); margin:24px 0}
 .quote{margin:0 0 12px; padding-left:12px; border-left:3px solid var(--line)}
@@ -91,7 +104,6 @@ footer{font-size:14px; color:var(--soft)}
 
 /* phones */
 @media(max-width:600px){
-  body{font-size:15px}
   .landing{padding:32px 14px 16px}
   .landing h1{font-size:17px}
   main{padding:8px 14px 40px}
